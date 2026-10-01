@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ankush | Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of Ankush, a computer science student focused on software development, Data Structures & Algorithms, Java, Python and Machine Learning.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="wrap" aria-label="Main">
+<a href="#home" class="logo">ANKUSH</a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+<ul class="links" id="menu">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#dsa">DSA</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="home">
+<div class="wrap hero">
+<div>
+<h1>Hi, I'm Ankush 👋</h1>
+<div class="role">Aspiring Software Developer</div>
+<p>I'm a computer science student passionate about software development, Data Structures &amp; Algorithms, and Machine Learning. I enjoy building practical projects and continuously improving my problem-solving skills.</p>
+<div class="cta">
+<a class="btn primary" href="#projects">View My Projects</a>
+<a class="btn" href="https://github.com/AnkushChandra31" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+<div class="code" aria-hidden="true">
+<div class="bar"><i></i><i></i><i></i><span>ankush.java</span></div>
+<pre><span class="c">// currently learning &amp; building</span>
+<span class="k">public class</span> <span class="f">Ankush</span> {
+  String role = <span class="s">"CS Student"</span>;
+  String[] languages = {<span class="s">"Java"</span>, <span class="s">"C"</span>,
+                        <span class="s">"C++"</span>, <span class="s">"Python"</span>};
+  String[] focus = {<span class="s">"DSA"</span>, <span class="s">"ML"</span>};
+
+  <span class="k">void</span> <span class="f">today</span>() {
+    solveProblem();
+    buildProject();
+    <span class="k">keepLearning</span>();<span class="cur"></span>
+  }
+}</pre>
+</div>
+</div>
+</section>
+
+<section id="about" class="fade">
+<div class="wrap">
+<h2>About Me</h2>
+<div class="about">
+<div>
+<p>I'm a computer science student interested in software development, Data Structures &amp; Algorithms, Java, Python, and Machine Learning.</p>
+<p>Right now I'm improving my problem-solving skills through DSA practice in Java, and building practical projects to strengthen my development skills. I like turning what I learn in class into working programs.</p>
+</div>
+<ul class="facts">
+<li class="card" style="padding:.9rem 1.1rem">💻 Software development</li>
+<li class="card" style="padding:.9rem 1.1rem">🧠 DSA with Java</li>
+<li class="card" style="padding:.9rem 1.1rem">📊 Machine Learning with Python</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<div class="wrap">
+<h2>Skills</h2>
+<p class="lead">Tools and concepts I use in my coursework and projects.</p>
+<div class="grid" id="skillGrid"></div>
+</div>
+</section>
+
+<section id="projects" class="fade">
+<div class="wrap">
+<h2>Projects</h2>
+<p class="lead">College and personal projects I have built while learning software development, DSA, and Machine Learning.</p>
+<div class="grid" id="projGrid" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))"></div>
+</div>
+</section>
+
+<section id="dsa" class="fade">
+<div class="wrap">
+<h2>DSA &amp; Problem Solving</h2>
+<p class="lead">I'm actively practicing Data Structures &amp; Algorithms in Java and solving coding problems to sharpen how I break down and solve problems.</p>
+<div class="grid" id="dsaGrid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div>
+<div class="stats" aria-label="LeetCode progress">
+<div class="card"><strong id="st-solved">0</strong><span>Problems solved</span></div>
+<div class="card"><strong id="st-streak">0</strong><span>Day streak</span></div>
+<div class="card"><strong id="st-days">0</strong><span>Days since I started</span></div>
+</div>
+<div class="cta" style="margin:0">
+<a class="btn primary" href="https://leetcode.com/u/Ankushchandra18/" target="_blank" rel="noopener">LeetCode</a>
+<a class="btn" href="https://github.com/AnkushChandra31" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+</section>
+
+<section id="education" class="fade">
+<div class="wrap">
+<h2>Education</h2>
+<p class="lead">My academic background and current area of study.</p>
+<div class="tl">
+<div class="card">
+<h3>Graphic Era Deemed to be University</h3>
+<p>Artificial Intelligence &amp; Data Science</p>
+<p class="chip" style="display:inline-block">2025 – 2028</p>
+<p><b style="color:var(--text);font-weight:500">Relevant coursework:</b> Data Structures &amp; Algorithms, DBMS, OOP, Machine Learning</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="fade">
+<div class="wrap contact">
+<div>
+<h2>Let's Connect</h2>
+<p class="lead" style="margin:0">I'm always interested in learning, building projects, and connecting with other developers.</p>
+<div class="clinks">
+<a class="btn" href="https://github.com/AnkushChandra31" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/ankushchandra31" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="mailto:chandraankush31@gmail.com">chandraankush31@gmail.com</a>
+</div>
+</div>
+<form id="form" novalidate class="card">
+<label>Name<input id="name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></label>
+<label>Email<input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></label>
+<label>Message<textarea id="msg" name="message" required></textarea><span class="err" id="e-msg"></span></label>
+<button class="btn primary" type="submit" style="justify-self:start">Send via Email</button>
+<div id="status" role="status"></div>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span>© 2026 Ankush. Built with HTML, CSS &amp; JavaScript.</span>
+<span><a href="https://github.com/AnkushChandra31" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/ankushchandra31" target="_blank" rel="noopener">LinkedIn</a></span>
+</div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
