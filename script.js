@@ -19,7 +19,7 @@ $("#dsaGrid").innerHTML=dsa.map(d=>`<div class="card dsa"><span class="ico" aria
 
 // LeetCode progress: update solved/streak here whenever you practice.
 // "Days since I started" counts up automatically every day from START.
-const LC={solved:6,streak:6,start:"2026-10-01"};
+const LC={solved:14,streak:9,start:"2026-10-01"};
 const days=Math.max(1,Math.floor((Date.now()-new Date(LC.start+"T00:00:00"))/864e5)+1);
 const target={"st-solved":LC.solved,"st-streak":LC.streak,"st-days":days};
 const countUp=()=>Object.entries(target).forEach(([id,n])=>{const el=$("#"+id);let i=0;const t=setInterval(()=>{el.textContent=i;if(i>=n)clearInterval(t);i++},n?Math.min(120,700/n):0)});
