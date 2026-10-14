@@ -7,7 +7,7 @@ const skills=[
 ];
 const projects=[
  {t:"Smart Expense Tracker",d:"A Python-based expense tracking application with a GUI, SQLite database, expense management, validation, reports, and CSV export.",tech:["Python","Tkinter","SQLite"],links:[["GitHub","https://github.com/AnkushChandra31/Smart-Expense-Tracker"]]},
- {t:"College Placement System",d:"A Python-based college placement project focused on handling placement-related information and workflows.",tech:["Python"],links:[]},
+{t:"College Placement System",d:"A Python-based college placement project focused on handling placement-related information and workflows.",tech:["Python"],links:[["GitHub","https://github.com/AnkushChandra31/CollegePlacementSystem"]]},
  {t:"Crop Recommendation ML Project",d:"A machine learning project that uses agricultural data to recommend suitable crops based on input parameters.",tech:["Python","Pandas","NumPy","Scikit-learn","Machine Learning"],links:[]}
 ];
 const dsa=[["Arrays","🔢"],["Strings","🔤"],["Stack","📚"],["Queue","🚶"],["Linked List","🔗"],["Searching","🔍"],["Sorting","↕️"],["Problem Solving","🧠"]];
