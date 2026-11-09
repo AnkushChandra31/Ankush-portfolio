@@ -1,9 +1,9 @@
 // ---- Content: edit or add items here ----
 const skills=[
- {t:"Programming",i:"⌨️",s:["Java","C","C++","Python"]},
- {t:"Computer Science",i:"🧩",s:["Data Structures & Algorithms","Object-Oriented Programming","DBMS","SQL"]},
- {t:"Machine Learning",i:"📈",s:["Python","Pandas","NumPy","Matplotlib","Scikit-learn","Linear Regression","Classification"]},
- {t:"Tools",i:"🛠️",s:["Git","GitHub","VS Code"]}
+ {t:"Languages",s:["Java","Python","C","C++"]},
+ {t:"Core CS",s:["Data Structures","Algorithms","OOP","DBMS","SQL"]},
+ {t:"Data & ML",s:["Pandas","NumPy","Scikit-learn","Matplotlib"]},
+ {t:"Workflow",s:["Git","GitHub","VS Code"]}
 ];
 const projects=[
  {t:"Smart Expense Tracker",d:"A Python-based expense tracking application with a GUI, SQLite database, expense management, validation, reports, and CSV export.",tech:["Python","Tkinter","SQLite"],links:[["GitHub","https://github.com/AnkushChandra31/Smart-Expense-Tracker"]]},
@@ -13,9 +13,9 @@ const projects=[
 const dsa=[["Arrays","🔢"],["Strings","🔤"],["Stack","📚"],["Queue","🚶"],["Linked List","🔗"],["Searching","🔍"],["Sorting","↕️"],["Problem Solving","🧠"]];
 
 const $=s=>document.querySelector(s);
-$("#skillGrid").innerHTML=skills.map(g=>`<article class="card skill"><h3><span class="ico" aria-hidden="true">${g.i}</span>${g.t}</h3><div class="chips">${g.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div></article>`).join("");
-$("#projGrid").innerHTML=projects.map(p=>`<article class="card proj"><h3>${p.t}</h3><p>${p.d}</p><div class="chips">${p.tech.map(x=>`<span class="chip">${x}</span>`).join("")}</div><div class="row">${p.links.length?"":`<span class="chip">In development</span>`}${p.links.map((l,i)=>`<a class="btn sm${i?"":" primary"}" href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("")}</div></article>`).join("");
-$("#dsaGrid").innerHTML=dsa.map(d=>`<div class="card dsa"><span class="ico" aria-hidden="true">${d[1]}</span><b style="margin-top:.7rem">${d[0]}</b><small>Practicing in Java</small></div>`).join("");
+$("#skillGrid").innerHTML=skills.map((g,i)=>`<article class="capability"><span class="capability-number">0${i+1}</span><h3>${g.t}</h3><div class="chips">${g.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div></article>`).join("");
+$("#projGrid").innerHTML=projects.map((p,i)=>`<article class="project"><span class="project-index">0${i+1}</span><h3>${p.t}</h3><p>${p.d}</p>${p.links.map(l=>`<a class="project-link" aria-label="View ${p.t} on ${l[0]}" href="${l[1]}" target="_blank" rel="noopener">↗</a>`).join("")}</article>`).join("");
+$("#dsaGrid").innerHTML=dsa.map(d=>`<span class="topic">${d[0]}</span>`).join("");
 
 // LeetCode progress: update solved/streak here whenever you practice.
 // "Days since I started" counts up automatically every day from START.
